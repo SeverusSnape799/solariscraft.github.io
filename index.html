@@ -19,18 +19,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://tfpb.techforpalestine.org/lib/banner.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            TFPBanner.create({
-                theme: "dark",
-                fixed: false,
-            });
-            // Move banner to the bottom of the body after it's created
-            setTimeout(function () {
-                var banner = document.querySelector('.tfpb-banner');
-                if (banner) {
-                    document.body.appendChild(banner);
-                }
-            }, 1000); // Delay to ensure banner is created
+        TFPBanner.create({
+            theme: "dark",
+            fixed: true,
         });
     </script>
 </head>
